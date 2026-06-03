@@ -1,0 +1,268 @@
+.customer-checklist h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.checklist-layout {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 20px;
+}
+
+.customer-list h3,
+.customer-details h3 {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.customer-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.customer-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.customer-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.customer-card.selected {
+  border-color: #667eea;
+  background: #f8f9ff;
+}
+
+.customer-card h4 {
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.customer-card p {
+  margin: 0 0 10px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: #888;
+}
+
+.customer-details {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-note-button {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.add-note-button:hover {
+  background: #5568d3;
+}
+
+.customer-info {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.customer-info p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.service-notes h4 {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.note-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border-left: 4px solid #667eea;
+}
+
+.note-text {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.repair-items {
+  margin: 10px 0;
+}
+
+.repair-items strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.repair-items ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #666;
+}
+
+.repair-items li {
+  margin: 5px 0;
+}
+
+.note-actions {
+  margin-top: 15px;
+}
+
+.create-reminder-button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.create-reminder-button:hover {
+  background: #218838;
+}
+
+.note-date {
+  display: block;
+  margin-top: 10px;
+  color: #999;
+  font-size: 12px;
+}
+
+.empty-state {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.modal-actions button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.modal-actions button[type="button"] {
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+}
+
+.modal-actions button[type="submit"] {
+  background: #667eea;
+  color: white;
+  border: none;
+}
+
+.modal-actions button[type="submit"]:hover {
+  background: #5568d3;
+}
